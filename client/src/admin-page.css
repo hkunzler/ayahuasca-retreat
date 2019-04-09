@@ -1,0 +1,39 @@
+#admin-page {
+    text-align: center;
+    height: 100vh;
+    background-image: url(media/vine.png);
+    background-size: 50%;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+    margin: 0 20%;
+}
+
+#admin-page h4 {
+    padding-bottom: 20%;
+}
+
+.admin-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+}
+
+.admin-box {
+    margin: 5% 20%;
+     margin: 5% 10%;
+    background: white;
+    border-radius: 10%;
+    box-shadow: 5px 10px;
+    border: 1px solid darkgreen;
+}
+.modal .modal-content {
+    padding: 0 36%;
+}
+/* 
+@media only screen and (min-width: 1200px) {
+    #admin-page {
+        padding: 0% 10%;
+    }
+} */

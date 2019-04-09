@@ -1,0 +1,69 @@
+#about{
+    margin: 0 20%;
+}
+
+.brianna{
+    background: url(media/brianna.jpg);
+    width: 35%;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+    margin: 10% 30%;
+}
+
+.shaman-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding-top: 25px;
+}
+.shaman-flex{
+    display: flex;
+    flex-direction: column;
+}
+
+.sara{
+    background: url(media/sara.jpg);
+    width: 70%;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+        margin-left: 15%;
+
+}
+
+.elias {
+    background: url(media/sara.jpg);
+    width: 70%;
+    height: 100px;
+    background-size: cover;
+    border-radius: 50%;
+        margin-left: 15%;
+
+}
+
+.two-people{
+    background: url(media/two-people.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+.one-person {
+    background: url(media/one-person.jpg);
+    width: 100%;
+    height: 400px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-bottom: 25px;
+}
+@media only screen and (min-width: 768px) {
+    .elias, .sara, .brianna{
+        height: 200px;
+    }
+}
+@media only screen and (min-width: 1500px) {
+    .elias, .sara, .brianna {
+        height: 350px;
+    }
+}

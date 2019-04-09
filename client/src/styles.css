@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+.body-background{
+    background-image: url(media/vine.png);
+    background-size: 50%;
+    background-position: left;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: white;
+}
+
+
+h4 {
+    font-family: 'Charm',
+        cursive;
+        padding-top: 23%;
+        font-size: 5vh;
+}
+
+h5 {
+    font-family: 'Amita',
+        cursive;
+    text-align: center;
+    font-size: 4vh;
+}
+
+p {
+    font-family: 'Quicksand',
+        sans-serif;
+        font-size: 3vh;
+}
+
+.white-layer{
+    background-color: rgba(255, 255, 255, 0.67);
+    width: 100%;
+    margin: 0 !important;
+}
+
+.sidenav{
+        width: 210px;
+}
+.carousel.carousel-slider .carousel-item p {
+    font-size: 2vh;
+}
+
+a{
+    font-size: 2vh;
+}
+button{
+    font-size: 3vh;
+}
+
+@media only screen and (min-width: 768px) {
+    .brand-logo{
+        width: 13%;
+    }
+    .body-background {
+        margin: 0 10%;
+    }
+    .background-sides {
+        background: url(media/side-baclground.jpeg);
+        background-attachment: fixed;
+        background-size: cover;
+
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .brand-logo{
+        width: 6%;
+        margin: .5% 0;
+    }
+    h4{
+        font-size: 4vh;
+    }
+    h5{
+        font-size: 3vh;
+    }
+    p{
+        font-size: 2vh;
+    }
+    .carousel.carousel-slider .carousel-item p {
+        font-size: 2vh;
+    }
+    nav .brand-logo.center{
+        left: 5%;
+    }
+}

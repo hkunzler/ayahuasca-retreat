@@ -1,0 +1,15 @@
+nav{
+    background: white;
+    color: darkgreen;
+}
+
+nav a{
+    color: darkgreen !important;
+}
+
+.brand-logo{
+    margin: 1% 0;
+    width: 20%;
+    height: 90%;
+    border-radius: 50%;
+}
