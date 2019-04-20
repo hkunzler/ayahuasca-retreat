@@ -2,6 +2,7 @@ const express = require('express')
 const authRouter = express.Router()
 const jwt = require('jsonwebtoken')
 const Admin = require('../models/admin')
+const secret = process.env.SECRET || "twitch purple tree jokster apple"
 
 authRouter.post('/signup', (req, res, next) => {
     Admin.findOne({ username: req.body.username.toLowerCase() }, (err, admin) => {
@@ -21,10 +22,10 @@ authRouter.post('/signup', (req, res, next) => {
                 res.status(500)
                 return next(new Error("Username and Password are required"))
             }
-            const token = jwt.sign(savedAdmin.withoutPassword(), process.env.SECRET)
-            
+            const token = jwt.sign(savedAdmin.withoutPassword(), secret)
+
             return res.status(201).send({ admin: savedAdmin.withoutPassword(), token })
-            
+
         })
     })
 })
@@ -47,7 +48,7 @@ authRouter.post('/login', (req, res, next) => {
                 res.status(401)
                 return next(new Error("Username or password is incorrect"))
             }
-            const token = jwt.sign(admin.withoutPassword(), process.env.SECRET)
+            const token = jwt.sign(admin.withoutPassword(), secret)
             return res.status(200).send({admin: admin.withoutPassword(), token})
         })
     })
