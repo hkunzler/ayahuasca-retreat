@@ -9,9 +9,8 @@
     background-image: url(media/vine.png);
     background-size: 50%;
     background-position: left;
-    /* background-attachment: fixed; */
+    background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
     background-color: white;
 }
 

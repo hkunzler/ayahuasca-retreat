@@ -5,7 +5,6 @@ const Home = () => {
     <div id="home">
       <div className="home-logo" />
       <div className="home-container">
-        <h4>Hello beautiful humans.</h4>
         <h5>Welcome to Ascension Medicina.</h5>
         <p>
           This retreat is located in the heart of the Amazon Rainforest in the
